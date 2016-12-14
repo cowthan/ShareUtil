@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShareActivity"
+        android:orientation="vertical"
+        >
+    <Button
+            android:id="@+id/action_share"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:text="Share"
+            android:textAllCaps="false"
+            />
+
+    <Button
+            android:id="@+id/action_share_qq"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="qq分享"
+            />
+    <Button
+        android:id="@+id/to_login"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="登录"
+        />
+    <Button
+        android:id="@+id/to_main"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="主页"
+        />
+</LinearLayout>
