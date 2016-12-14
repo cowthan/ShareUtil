@@ -36,3 +36,4 @@ dependencies {
     compile files('libs/libammsdk.jar')
 }
 
+

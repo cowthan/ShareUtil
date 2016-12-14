@@ -160,7 +160,6 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginBottom="17dp"
                         android:text="QQ空间"
-
                         />
             </RelativeLayout>
         </LinearLayout>

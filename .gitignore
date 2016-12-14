@@ -13,7 +13,11 @@
 # Java class files
 *.class
 
+<<<<<<< HEAD
 
+=======
+*.jar
+>>>>>>> da1e958cf6e4b5cc319cc4213817acf6e458f87a
 
 # Generated files
 bin/

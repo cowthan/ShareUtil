@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.sina.weibo.sdk.api.share.IWeiboShareAPI;
 import com.sina.weibo.sdk.api.share.WeiboShareSDK;
 import com.sina.weibo.sdk.auth.AuthInfo;
@@ -31,6 +30,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import rx.Emitter;
 import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
@@ -106,7 +106,7 @@ public class WeiboLoginInstance extends LoginInstance {
             }
         }, Emitter.BackpressureMode.DROP)
                 .subscribeOn(Schedulers.io())
-                .observeOn(rx.android.schedulers.AndroidSchedulers.mainThread())
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<WeiboUser>() {
                     @Override
                     public void call(WeiboUser weiboUser) {
